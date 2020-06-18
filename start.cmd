@@ -80,8 +80,8 @@ goto :EOF
       if "!line!" == "" (
         echo.>> proxy.conf.tmp
       ) else (
-        set line=!line:magento_project_name=%projectName%!
-        set line=!line:magento_project_domain=%domain%!
+        set line=!line:project_name=%projectName%!
+        set line=!line:project_domain=%domain%!
         echo !line!>> proxy.conf.tmp
       )
       endLocal
